@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body>
+
+  <section class="homepage"> 
+    <header><!--here-->
+      <nav>
+        <div class="nav">
+          <p class="welcome"> <a href="#portfolio">welcome</a> </p>
+          <div class="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- <img src="assets/images/menu-bar.png" alt="Menu" class="menu" id="bar">  -->
+          <!-- <img src="assets/images/close-icon.png" alt="Menu" class="menu-2" style="display: none;" id="close">  -->
+          <div class="nav-b hidden-content"> 
+            <ul class="nav-items">
+              <li class="li-1"><a href="#portfolio" class="nvl">Portfolio</a></li>
+              <li class="li-1"><a href="#about" class="nvl">About Me</a></li>
+              <li class="li-1"><a href="#contact" class="nvl">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="desktop">
+            <ul class="ul-desktop">
+              <li class=""><a href="#portfolio" class="">Portfolio</a></li>
+              <li class=""><a href="#about" class="">About Me</a></li>
+              <li class=""><a href="#contact" class="">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <h1 class="intro-text">
+      Hey there. I'm Evans Kupour <span>I'm a software developer</span>
+    </h1>
+    <p class="intro-note">
+      I can help you build a product , feature or website Look through some of my work and experience! <br> If you like what you see and have a project you need coded, <br>
+      don't hestiate to contact me.
+    </p>
+    <div class="soc-media">
+      <a href="#"><img src="assets/images/Vector01.png" alt="Github icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector02.png" alt="Linkedin icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector03.png" alt="Angellist icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector04.png" alt="Twitter icon with profile link"></a>
+      <a href="#"><img src="assets/images/vectorM.png" alt="Medium icon with profile link"></a>
+    </div>
+    <div class="action">
+      <button type="button" class="button">
+        <img src="assets/images/action.png" alt="Scroll down button">
+      </button>
+    </div>
+    
+  </section>
+
+  <section id="popup-window">
+    <div class="popup">
+    </div>
+  </section>
+  <!-- Recent work Section-->
+  <section class="recent-work" id="portfolio">
+
+    <h2 class="recent-text">
+      My Recent Works
+    </h2>
+    
+    <div class="indicator"></div>
+
+    <div id="card-container" class="card-container">
+    </div>
+  </section>
+    <!-- About-Me-Sectoin -->
+  <section class="about-me" id="about">
+    <h2 class="about-primary-text">About me</h2>
+    <p class="about-support-text">
+      I can help you build a product , feature or website Look through some of my work and experience! <br> If you like what you see and have a project you need coded, <br>
+      don't hestiate to contact me.
+    </p>
+    <div class="btn-get-resume">
+      <button type="button" class="btn-resume">
+        Get My Resume
+      </button>
+    </div>
+
+    <div class="about-cards">
+
+      <div class="card-a">
+        <div class="ellipse">
+          <img src="assets/images/Icon-Langguage.png" alt="Icon used in the placard to visually enhance the box" class="lang-icon">
+        </div>
+        <p class="title1">Languages</p>
+        <ul class="langs">
+          <li class="x">JavaScript</li>
+          <li class="x">Ruby</li>
+          <li class="x">Html</li>
+          <li class="x">css</li>
+        </ul>
+      </div>
+
+      <div class="card-a">
+        <div class="ellipse">
+          <img src="assets/images/icon-framework.png" alt="Icon used in the placard to visually enhance the box" class="lang-icon">
+        </div>
+        <p class="title1">Framewoks</p>
+        <ul class="langs">
+          <li class="x">Bootstrap</li>
+          <li class="x">Ruby on rails</li>
+          <li class="x">RSpec</li>
+          <li class="x">Capybara</li>
+          <li class="x">Selenium</li>
+        </ul>
+      </div>
+
+      <div class="card-a">
+        <div class="ellipse">
+          <img src="assets/images/icon-skill.png" alt="Icon used in the placard to visually enhance the box" class="lang-icon">
+        </div>
+        <p class="title1">Skills</p>
+        <ul class="langs">
+          <li class="x">Codekit</li>
+          <li class="x">Github</li>
+          <li class="x">Codepen</li>
+          <li class="x">Gitlab</li>
+          <li class="x">Terminal</li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <form name="form" action="https://formspree.io/f/mjvzkpee" method="post" class="form" id="contact">
+      <h2 class="form-text">
+        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+      </h2>
+
+      <div class="fields">
+        <input id="name" type="text" class="full-name" placeholder="Full-name" maxlength="30" required>
+        <input id="email" name="email" type="email" placeholder="Email address" class="email" required>
+        <textarea id="textarea" name="textarea" cols="30" rows="10" placeholder="Enter text here" class="text-area" required maxlength="500"></textarea>
+      
+        <div class="btn-get-resume" id="git">
+          <button type="submit" class="btn-resume submit-btn" id="submit">
+            Get in touch
+          </button>
+        </div>
+        <small class="err-msg"></small>
+      </div>
+    </form>
+    
+  </section>
+    <!-- Footer Section -->
+  <section class="footer" id="footer">
+    <div class="soc-media-b">
+      <a href="#"><img src="assets/images/Vector01.png" alt="Github icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector02.png" alt="Linkedin icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector03.png" alt="Angellist icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector04.png" alt="Twitter icon with profile link"></a>
+      <a href="#"><img src="assets/images/vectorM.png" alt="Medium icon with profile link"></a>
+    </div>
+    <a href="#" class="emailhere">myemailhere@gmail.com</a>
+  </section>
+
+  <div class="end" id="end"></div>
+  <script src="./js/index.js"></script>
+  <script src="./js/form-validation.js"></script>
+</body>
+</html>
